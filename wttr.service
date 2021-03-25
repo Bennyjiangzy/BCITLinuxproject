@@ -1,0 +1,12 @@
+[Unit]
+Description=This is the coolest weather service
+ 
+
+[Service]
+Type = simple
+ExecStart = /home/vagrant/week11/wrr
+WorkingDirectory = /home/vagrant/week11
+Restart = on-failure
+
+[Install]
+WantedBy=multi-user.target

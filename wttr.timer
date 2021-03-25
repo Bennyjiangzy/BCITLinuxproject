@@ -1,0 +1,10 @@
+[Unit]
+Description=the Coolest timer
+
+[Timer]
+Unit=wttr.service
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
